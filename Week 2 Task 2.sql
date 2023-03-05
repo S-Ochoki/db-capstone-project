@@ -1,5 +1,5 @@
 -- My table structure is not the same as the one proposed in the exercise.
--- I therefore had to go about the task differently
+-- I therefore had to go about the task differently - I use a CTE to list all Order Items for Orders with a Total Bill above $150
 -- List of customers with orders over $150 
 WITH 
 CTE as (
@@ -30,14 +30,15 @@ CTE as (
 		TotalCost > 150
         ) -- End of CTE
 
-select 
+-- Lists the first Main Course and Starter
+SELECT 
 	CustomerID, 
 	FullName, 
 	OrderID, 
 	TotalCost,
-	(select MenuName from CTE where CourseType = "Main Courses" limit 1) as MenuName,
-	(select ItemName from CTE where CourseType = "Main Courses" limit 1) as CourseName,
-	(select ItemName from CTE where CourseType = "Starters" limit 1) as StarterName
-from CTE
-group by OrderID
-order by TotalCost asc;
+	(SELECT MenuName FROM CTE WHERE CourseType = "Main Courses" limit 1) AS MenuName,
+	(SELECT ItemName FROM CTE WHERE CourseType = "Main Courses" limit 1) AS CourseName,
+	(SELECT ItemName FROM CTE WHERE CourseType = "Starters" limit 1) AS StarterName
+FROM CTE
+GROUP BY OrderID
+ORDER BY TotalCost ASC;
