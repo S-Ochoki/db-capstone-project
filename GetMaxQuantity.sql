@@ -4,4 +4,4 @@ CREATE DEFINER=`meta`@`%` PROCEDURE `GetMaxQuantity`()
 SELECT 
     MAX(orders.quantity) AS 'Max Quantity in Order'
 FROM
-    littlelemondb.orders
+    littlelemondb.orders;
