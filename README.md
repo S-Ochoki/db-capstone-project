@@ -7,15 +7,15 @@ The Capstone project enabled me to demonstrate multiple skills from the Certific
 
 I demonstrate my new skillset by designing and composing a database solution, combining all the skills and technologies I've learned throughout the program to solve the problem at hand. 
 
-By the end of this project, I had proven your ability to:
--Set up a database project, - Database Modelling, Forward and Backward Engineering, Model Synchronization
--Add sales reports,
--Create a table booking system,
--Work with data analytics and visualization, - Tableau, Data Modelling (Snowflake)
--And create a database client. - via Python MySQL Connector API
-
-I also demonstrated my ability with the following tools and software:
--Git,
--MySQL Workbench,
--Tableau,
--And Python.
+By the end of this project, I had proven your ability to:  
+-Set up a database project, - Database Modelling, Forward and Backward Engineering, Model Synchronization  
+-Add sales reports,  
+-Create a table booking system,  
+-Work with data analytics and visualization, - Tableau, Data Modelling (Snowflake)   
+-And create a database client. - via Python MySQL Connector API   
+   
+I also demonstrated my ability with the following tools and software:   
+-Git,   
+-MySQL Workbench,   
+-Tableau  
+-And Python.   
